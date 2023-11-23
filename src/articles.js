@@ -1,6 +1,6 @@
 let articles = [
   {
-    id: 1,
+    id: 0,
     name: "Article 1",
     img: "vélo1.webp",
     description: "Description de l'article 1",
@@ -9,7 +9,7 @@ let articles = [
     promo: true,
   },
   {
-    id: 2,
+    id: 1,
     name: "Article 2",
     img: "vélo2.webp",
     description: "Description de l'article 2",
@@ -18,7 +18,7 @@ let articles = [
     promo: false,
   },
   {
-    id: 3,
+    id: 2,
     name: "Article 3",
     img: "vélo3.webp",
     description: "Description de l'article 3",
@@ -27,7 +27,7 @@ let articles = [
     promo: true,
   },
   {
-    id: 4,
+    id: 3,
     name: "Article 4",
     img: "vélo4.webp",
     description: "Description de l'article 4",
@@ -36,7 +36,7 @@ let articles = [
     promo: false,
   },
   {
-    id: 5,
+    id: 4,
     name: "Article 5",
     img: "vélo5.webp",
     description: "Description de l'article 5",
@@ -45,7 +45,7 @@ let articles = [
     promo: true,
   },
   {
-    id: 6,
+    id: 5,
     name: "Article 6",
     img: "vélo6.webp",
     description: "Description de l'article 6",
@@ -54,7 +54,7 @@ let articles = [
     promo: false,
   },
   {
-    id: 7,
+    id: 6,
     name: "Article 7",
     img: "vélo7.webp",
     description: "Description de l'article 7",
@@ -63,7 +63,7 @@ let articles = [
     promo: true,
   },
   {
-    id: 8,
+    id: 7,
     name: "Article 8",
     img: "vélo8.webp",
     description: "Description de l'article 8",
@@ -72,16 +72,16 @@ let articles = [
     promo: false,
   },
   {
-    id: 9,
+    id: 8,
     name: "Article 9",
-    img: "uvélo9.webp",
+    img: "vélo9.webp",
     description: "Description de l'article 9",
     price: 180,
     qte: 9,
     promo: true,
   },
   {
-    id: 10,
+    id: 9,
     name: "Article 10",
     img: "vélo10.webp",
     description: "Description de l'article 10",
@@ -91,3 +91,5 @@ let articles = [
   },
   // Ajoutez plus d'articles ici...
 ];
+
+export { articles };

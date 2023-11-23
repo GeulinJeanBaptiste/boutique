@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Gallery.css';
+import "./Gallery.css";
+import Card from "../Card/Card.js";
 
-const Gallery = () => (
+const Gallery = (props) => (
   <div className="Gallery">
-    Gallery Component
+    {props.articles.map((value, index) => (
+      <Card
+        key={index}
+        article={value}
+        decrementQte={props.decrementQte}
+      ></Card>
+    ))}
   </div>
 );
-
-Gallery.propTypes = {};
-
-Gallery.defaultProps = {};
-
 export default Gallery;
