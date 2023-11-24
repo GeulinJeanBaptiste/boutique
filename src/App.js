@@ -1,9 +1,20 @@
 import React from "react";
 import Gallery from "./components/Gallery/Gallery.js";
+import Menu from "./components/Menu/Menu.js";
+import Panier from "./components/Panier/Panier.js";
 import { articles } from "./articles.js";
 import "./App.css";
 
 const App = () => {
+  const [statePanier, setStatePanier] = React.useState(
+    {
+      displayPanier: false
+    }
+  );
+  const displayPanierMenu = () => {
+    setStatePanier({ displayPanier: !statePanier.displayPanier });
+  };
+
   const [state, setState] = React.useState({
     articles: articles,
   });
@@ -22,6 +33,7 @@ const App = () => {
   return (
     <>
       <header>
+        {<Menu Panier={Panier} displayPanierMenu={displayPanierMenu}></Menu>}
         <main>
           <Gallery
             articles={state.articles}

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Panier.css';
 
 const Panier = () => (
@@ -8,8 +7,5 @@ const Panier = () => (
   </div>
 );
 
-Panier.propTypes = {};
-
-Panier.defaultProps = {};
 
 export default Panier;
