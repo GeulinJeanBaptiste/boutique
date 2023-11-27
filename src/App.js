@@ -3,17 +3,27 @@ import Gallery from "./components/Gallery/Gallery.js";
 import Menu from "./components/Menu/Menu.js";
 import Panier from "./components/Panier/Panier.js";
 import { articles } from "./articles.js";
+import { menuentries } from './menuentries.js';
 import "./App.css";
 
 const App = () => {
+
+  // panier
+  // panier
+  // panier
+
   const [statePanier, setStatePanier] = React.useState(
     {
       displayPanier: false
     }
   );
-  const displayPanierMenu = () => {
+  const handledisplayPanier = () => {
     setStatePanier({ displayPanier: !statePanier.displayPanier });
   };
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
   const [state, setState] = React.useState({
     articles: articles,
@@ -33,8 +43,10 @@ const App = () => {
   return (
     <>
       <header>
-        {<Menu Panier={Panier} displayPanierMenu={displayPanierMenu}></Menu>}
+        {<Menu handledisplayPanier={handledisplayPanier}
+          sendEntries={menuentries}></Menu>}
         <main>
+          <Panier></Panier>
           <Gallery
             articles={state.articles}
             decrementQte={decrementQte}
