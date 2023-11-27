@@ -2,4 +2,6 @@
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    background-color: black;
+    color: white;
 }
