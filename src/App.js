@@ -46,7 +46,7 @@ const App = () => {
         {<Menu handledisplayPanier={handledisplayPanier}
           sendEntries={menuentries}></Menu>}
         <main>
-          <Panier></Panier>
+          {statePanier.displayPanier?<Panier></Panier>:<></>}
           <Gallery
             articles={state.articles}
             decrementQte={decrementQte}
