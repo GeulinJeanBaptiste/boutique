@@ -12,7 +12,7 @@ const ListMenu = (props) => {
             <li
               /* un event ne peut pas être directement conditionné */
               onClick={
-                value.entry === "Panier" ? props.handleDisplayPanier : null
+                value.entry === "Panier" ? props.handledisplayPanier : null
               }
               key={index}>{value.entry}</li>
           )

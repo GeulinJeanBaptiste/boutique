@@ -21,8 +21,7 @@ const App = () => {
     setStatePanier({ displayPanier: !statePanier.displayPanier });
   };
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 
   const [state, setState] = React.useState({
@@ -46,7 +45,7 @@ const App = () => {
         {<Menu handledisplayPanier={handledisplayPanier}
           sendEntries={menuentries}></Menu>}
         <main>
-          {statePanier.displayPanier?<Panier></Panier>:<></>}
+          {statePanier.displayPanier?<Panier handledisplayPanier={handledisplayPanier}></Panier>:<></>}
           <Gallery
             articles={state.articles}
             decrementQte={decrementQte}

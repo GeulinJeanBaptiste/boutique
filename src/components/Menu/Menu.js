@@ -5,8 +5,8 @@ const Menu = (props) => {
     <nav id="menu">
       <ListMenu
         sendEntries={props.sendEntries}
-        handleDisplayPanier={props.handleDisplayPanier}></ListMenu>
+        handledisplayPanier={props.handledisplayPanier}></ListMenu>
     </nav>
   )
 }
-export default ListMenu;
+export default Menu;
