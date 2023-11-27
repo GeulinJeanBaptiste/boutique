@@ -1,1 +1,20 @@
-.Achat {}
+#AchatPanier {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid black 0.2rem;
+    margin: 1.5rem;
+    border-radius: 15px;
+}
+
+#AchatPanier span {
+    margin: 1rem;
+}
+
+.PanierBtn {
+    cursor: pointer;
+}
+
+.Panierprice {
+    font-weight: 600;
+}
