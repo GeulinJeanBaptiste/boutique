@@ -5,6 +5,7 @@ import Panier from "./components/Panier/Panier.js";
 import { articles } from "./articles.js";
 import { menuentries } from './menuentries.js';
 import BoutiqueContext from "./contexts/BoutiqueContext.js"
+import Footer from "./components/Footer/Footer.js"
 import "./App.css";
 
 const App = () => {
@@ -68,7 +69,7 @@ const App = () => {
       <header>
         {<Menu handledisplayPanier={handledisplayPanier}
           sendEntries={menuentries}></Menu>}
-        <main>
+        <main id="main">
           {statePanier.displayPanier ?
             <Panier
               handledisplayPanier={handledisplayPanier}
@@ -80,6 +81,7 @@ const App = () => {
           ></Gallery>
         </main>
       </header>
+      <footer><Footer></Footer></footer>
     </BoutiqueContext.Provider>
   );
 };

@@ -1,12 +1,33 @@
 .Card {
   align-items: center;
   text-align: center;
-  border: 0.1rem solid grey;
+  border: 0.1rem solid rgb(255, 255, 255);
   border-radius: 15px;
-  width: 28%;
+  width: 80%;
   margin: 1rem;
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   -webkit-box-shadow: 5px 5px 15px 0px #000000;
   box-shadow: 5px 5px 15px 0px #000000;
   padding: 0.2rem;
+
+}
+
+.Card p {
+  margin: 0.5rem;
+}
+
+.PriceCard {
+  text-decoration: underline red;
+}
+
+@media screen and (min-width: 576px) {
+  .Card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Card {
+    width: 22%;
+  }
 }

@@ -9,7 +9,7 @@ const ListMenu = (props) => {
         props.sendEntries.map((value, index) => {
 
           return (
-            <li
+            <li className='listMenuLi'
               /* un event ne peut pas être directement conditionné */
               onClick={
                 value.entry === "Panier" ? props.handledisplayPanier : null

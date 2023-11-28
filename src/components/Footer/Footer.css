@@ -1,4 +1,4 @@
-.ListMenu {
+.ListFooter {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,8 +8,9 @@
     height: 80px;
 }
 
-.listMenuLi {
+.listFooterLi {
     background-color: rgb(27, 26, 26);
     border-radius: 5px;
     padding: 0 2rem 0 2rem;
+    cursor: pointer;
 }

@@ -1,20 +1,32 @@
 #AchatPanier {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
     border: solid black 0.2rem;
     margin: 1.5rem;
     border-radius: 15px;
 }
 
-#AchatPanier span {
-    margin: 1rem;
-}
-
 .PanierBtn {
+    cursor: pointer;
+    background-color: grey;
+    padding: 0 3rem;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 .Panierprice {
     font-weight: 600;
+    text-decoration: underline red;
+}
+
+@media screen and (min-width: 576px) {
+    #AchatPanier {
+        flex-direction: row;
+    }
+
+    #AchatPanier span {
+        margin: 1rem;
+    }
 }

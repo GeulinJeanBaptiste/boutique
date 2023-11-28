@@ -9,7 +9,7 @@ const Achat = (props) => {
   return (
     <div id='AchatPanier'>
       <span className='Panierimg'><img src={"/assets/img/" + article.img}></img></span>
-      <span className='Paniername'>{article.name}</span>
+      <span className='Paniername'><h3>{article.name}</h3></span>
       <span className='PanierBtn'>-</span>
       <span className> {props.item.qteachat}</span>
       <span className='PanierBtn' onClick={() => boutiqueContext.decrementQte(id)}>+</span>
