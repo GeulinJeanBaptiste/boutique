@@ -13,7 +13,7 @@ const Card = (props) => {
       <p>Quantité: {props.article.qte}</p>
       <p className="PriceCard">Prix: {props.article.price} €</p>
       <p className="cardBtn">
-        <button onClick={() => props.decrementQte(props.article.id)}>
+        <button className="BtnAchat" onClick={() => props.decrementQte(props.article.id)}>
           Buy Now
         </button>
       </p>
